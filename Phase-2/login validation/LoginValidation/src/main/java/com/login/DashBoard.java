@@ -32,7 +32,7 @@ public class DashBoard extends HttpServlet {
 //		Check whether the session already exists
 		if ((session.getAttribute("userName") != null) && (session.getAttribute("userPassword") != null))  {
 
-			out.println("<h3>Welcome " + session.getAttribute("userName"));
+			out.println("<h3>Contact Form and Contact List Page");
 
 			out.println("<br> You are now logged in...</h3>");
 

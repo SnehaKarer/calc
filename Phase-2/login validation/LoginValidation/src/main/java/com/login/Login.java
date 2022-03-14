@@ -29,11 +29,12 @@ public class Login extends HttpServlet {
 		HttpSession theSession = request.getSession();
 		
 //		Validate the username
-		if(user.trim().equals("Sneha")  && Password.trim().equals("12345")) {
+		if(user.trim().equals("Sneha")  && Password.trim().equals("12345")) 
+		{
 //			Save the username in the session
 			theSession.setAttribute("userName", user);
 			theSession.setAttribute("userPassword", Password);
-//			Redirect to the Dashboard
+//			Redirect to the Dashboard 
 			response.sendRedirect("DashBoard");
 			
 		}
@@ -42,10 +43,7 @@ public class Login extends HttpServlet {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("index.html");
 			dispatcher.include(request, response);
 		}
-		
-
-	}
-
+		}
 }
 
 

@@ -221,7 +221,7 @@ public class AdminControllerServlet extends HttpServlet {
 
 	private boolean getCookies(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-		boolean check = false;
+	    boolean check = false;
 		Cookie[] cookies = request.getCookies();
 		// Find the cookie of interest in arrays of cookies
 		for (Cookie cookie : cookies) {
